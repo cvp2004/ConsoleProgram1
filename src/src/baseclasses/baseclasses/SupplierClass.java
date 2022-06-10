@@ -33,8 +33,6 @@ public class SupplierClass {
     public void setData() {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter Supplier Id                  : ");
-        this.setSupplierName(sc.nextLine());
         System.out.print("Enter Supplier Name                : ");
         this.setSupplierId(sc.nextLine());
         System.out.print("Enter City Name                    : ");

@@ -262,6 +262,8 @@ public class InventoryManagementSystem {
                     Collections.sort(sList, byId);
 
                     System.out.println("\t\t!!  New Supplier SuccessFully Added  !!");
+                    System.out.println();
+                    sList.getLast().showData();
                 }
             } else {
                 System.out.println("!!  No Product with " + x.returnPrimaryProductId() + " Id Registered  !!");
@@ -678,6 +680,8 @@ public class InventoryManagementSystem {
                 Collections.sort(pList, byId);
 
                 System.out.println("\t\t!!  New Product SuccessFully Added  !!");
+                System.out.println();
+                pList.getLast().showData();
             }
         }
         public static void removeProduct() {
@@ -909,6 +913,8 @@ public class InventoryManagementSystem {
             int choice = 0;
 
             do {
+                System.out.println();
+                System.out.println();
                 for (int i = 1; i <= 195; i++) System.out.print("*"); System.out.println();
                 for (int i = 0; i < 81; i++) System.out.print(" "); System.out.println("!!  PRODUCT-LIST MANAGEMENT MENU  !!");
                 for (int i = 1; i <= 195; i++) System.out.print("*"); System.out.println();
@@ -988,6 +994,8 @@ public class InventoryManagementSystem {
                 Collections.sort(cList, byId);
 
                 System.out.println("\n\t\t!!  New Customer SuccessFully Added  !!");
+                System.out.println();
+                cList.getLast().showData();
             }
 
         }
